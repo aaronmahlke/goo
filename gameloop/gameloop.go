@@ -18,13 +18,13 @@ type CharacterTexture struct {
 }
 
 type Player struct {
+	width      int
+	height     int
+	frame      int
+	texture    CharacterTexture
 	sourceRect rl.Rectangle
 	destRect   rl.Rectangle
 	pos        rl.Vector2
-	width      int
-	height     int
-	texture    CharacterTexture
-	frame      int
 	isMoving   bool
 }
 
